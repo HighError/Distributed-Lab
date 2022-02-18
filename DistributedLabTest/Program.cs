@@ -16,6 +16,10 @@ namespace DistributedLabTest
             {
                 Console.WriteLine("CRITICAL ERROR!!! Data file not found.");
             }
+            else if (journeys.Count == 0)
+            {
+                Console.WriteLine("Data not found!");
+            }
             else
             {
                 stations = Journey.GetAllStations(journeys);
